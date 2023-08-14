@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sumit | Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="/images/logo-img-2.png">
+    <link rel="icon" type="image/x-icon" href="/images/favi-icon.png">
     <link rel="stylesheet" href="./style.css">
-    
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
     <!------------------- Header ---------------------->
     <div class="header">
-        <nav class="nav-bar">
+        <nav class="nav-bar animate__animated animate__backInDown" >
             <div class="logo-nav">
                 <a href="#" class="logo-link"><img class="logo" src="images/logo-img.png" alt="logo"></a>
                 <a href="#"><h1><span class="s">S</span>umit<span class="large">.R</span></h1></a>
@@ -44,8 +47,8 @@
     </div>
     <main>
     <!------------------- Home ---------------------->
-        <div class="basic smoth-scroll" id="home">
-            <div class="info">
+        <div class="basic" id="home">
+            <div class="info animate__animated animate__bounceInLeft">
                 <h1 class="name">Hi, I'm Sumit</h1>
                 <div class="detail">
                     <h3>I'm a </h3>
@@ -58,14 +61,14 @@
                 </div>
                 
             </div>
-            <div class="photo">
+            <div class="photo animate__animated animate__bounceInRight">
                 <img src="images/developer-activity-animate.svg" class="hero-img" alt="">
             </div>
         </div>
 
     <!------------------- About me ---------------------->
 
-        <div class="smoth-scroldl" id="about-me">
+        <div id="about-me">
             <div class="abm-content">
                 <div class="left-content">
                     <h1>About Me!</h1>
@@ -75,20 +78,22 @@
                     <a href="images/resume-sumit rana.pdf" target="_blank" class="down-cv">Download CV</a>
                 </div>
                 <div class="right-content">
-                    <img src="images/nerd-animate (1).svg" alt="">
+                    <img src="images/programming-animate.svg" alt="">
                 </div>
             </div>
         </div>
 
     <!------------------- Skills ---------------------->
 
-        <div class="smoth-scroll" id="skills">
+        <div id="skills">
             <div class="skills-content">
                 <div class="skillLeft">
                     <h1>
                         What My Programming Skills Included?
                     </h1>
-                    <p>I develop simple, intuitive and responsive user interface that helps users get things done with less effort and time with those technologies.</p>
+                    <div style="text-align: center;">
+                        <img src="images/Coding workshop-amico.svg" class="skill-img" alt="">
+                    </div>
                 </div>
                 <div class="skillRight">
                     <div class="skills-grid">
@@ -135,7 +140,7 @@
 
     <!------------------- Projects ---------------------->
 
-        <div class="smoth-scroll" id="projects">
+        <div id="projects">
             <div class="heading">
                 <h1>See My Works Which Will Amaze You!</h1>
                 <!-- <div class="container">
@@ -201,8 +206,8 @@
                             <div class="project-details">
                                 <p>----Website</p>
                                 <h2>FilmFrenzy</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni obcaecati delectus hic ab perspiciatis, itaque temporibus iure maxime sequi repudiandae!</p>
-                                <button>Demo <i class="fa-solid fa-arrow-right"></i></button>
+                                <p>A web application that adaptable to all devices , where user can search any movies and gets basic information of movies.</p>
+                                <a href="https://sumit2456rana.github.io/FilmFrenzy/"><button>Demo <i class="fa-solid fa-arrow-right"></i></button></a>
                             </div>
                         </div>
                         <div class="container-2">
@@ -212,8 +217,9 @@
                             <div class="project-details">
                                 <p>----Website</p>
                                 <h2>Unsplash</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni obcaecati delectus hic ab perspiciatis, itaque temporibus iure maxime sequi repudiandae!</p>
-                                <button>Demo <i class="fa-solid fa-arrow-right"></i></button>
+                                <p>A web application that allows users to search for high-quality photos from the Unsplash API.
+                                </p>
+                                <a href="https://sumit2456rana.github.io/UnsplashPhotoSearch/"><button>Demo <i class="fa-solid fa-arrow-right"></i></button></a>
                             </div>
                         </div>
                         <div class="container-3">
@@ -223,8 +229,8 @@
                             <div class="project-details">
                                 <p>----Website</p>
                                 <h2>Github Profiles</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni obcaecati delectus hic ab perspiciatis, itaque temporibus iure maxime sequi repudiandae!</p>
-                                <button>Demo <i class="fa-solid fa-arrow-right"></i></button>
+                                <p>A web application that retrieves and displays GitHub user profiles and repositories.</p>
+                                <a href="https://sumit2456rana.github.io/gitProfiles/"><button>Demo <i class="fa-solid fa-arrow-right"></i></button></a>
                             </div>
                         </div>
                         
@@ -244,7 +250,7 @@
 
     <!------------------- Contact Me ---------------------->
 
-        <div class="smoth-scroll" id="contact">
+        <div id="contact">
             <div class="contactMe">
                 <div class="left-side">
                     <h1>Have You Any Project?<br> Please Drop a Message</h1>
@@ -265,10 +271,10 @@
                         <p><a href="mailto: sumitrana2396@gmail.com">sumitrana2396@gmail.com</a></p>
                     </div>
                     <div class="socail-links">
-                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                        <a href=""><i class="fa-brands fa-github"></i></a>
-                        <a href=""><i class="fa-brands fa-twitter"></i></a>
-                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/sumit-rana-325048278/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/sumit2456rana" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://twitter.com/RanaSum44360180" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/people/Sumit-Rana/pfbid037gZxEAgQPY2YjRfGE3H5qCHNcgzAy38PuyCcJjkZgoCXWxL6pgoeN7c53VermoPBl/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                     </div>
                 </div>
                 <div class="right-side">
@@ -314,7 +320,7 @@
                 </div>
             </div>
         </div>
-        <footer class="smoth-scroll foot">
+        <footer class="foot">
             <div class="logo-nav">
                 <a href=""><h2><span class="s">S</span>umit<span class="large">.R</span></h2></a>
             </div>

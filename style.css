@@ -331,14 +331,6 @@ body.dark-mode {
     height: 100vh;
     /* text-align: center; */
 }
-html {
-    scroll-snap-type: y;
-}
-.smoth-scroll {
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-}
-
 .abm-content {
     display: flex;
     /* align-items: center; */
@@ -885,6 +877,10 @@ footer .logo-nav a{
     background-color: transparent;
     cursor: pointer;
 }
+.skill-img {
+    width: 400px;
+    height: 350px;
+}
 /* Responsiveness for tablet */
 @media (max-width: 1050px) {
     .toggle-menu {
@@ -912,6 +908,15 @@ footer .logo-nav a{
     }
     .detail {
         width: 300px;
+    }
+    @keyframes typing {
+        0% {
+            width: 0;
+        }
+        70% {
+            width: 76%; 
+        }
+        
     }
     .info h3 {
         font-size: 1.4rem;
@@ -1001,6 +1006,9 @@ footer .logo-nav a{
     .left-side {
         width: 100%;
     }
+    .skill-img {
+        display: none;
+    }
     .left-side h1 {
         font-size: 2.2rem;
     }
@@ -1015,6 +1023,9 @@ footer .logo-nav a{
     div.logo-nav {
         margin-right: 80px;
         margin-left: 10px;
+    }
+    .s , .large{
+        font-size: 1.8rem;
     }
     .basic {
         flex-wrap: wrap-reverse;
@@ -1067,6 +1078,13 @@ footer .logo-nav a{
     }
     .down-cv {
         padding: 6px 20px;
+    }
+    #skills {
+        height: auto;
+    }
+    .skill-img {
+        width: 300px;
+        height: 250px;
     }
     .skillLeft h1 {
         font-size: 1.8rem;
@@ -1123,7 +1141,11 @@ footer .logo-nav a{
     }
     .dots {
         left: 34%;
-        margin-top: 20px;
+        margin-top: 65px;
+    }
+    #angle-left , #angle-right{
+        font-size: 1.8rem;
+        margin: 0px 10px;
     }
     .left-side {
         padding: 0px 20px;
